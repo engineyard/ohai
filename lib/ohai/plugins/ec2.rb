@@ -92,9 +92,9 @@ def userdata()
 end
 
 def looks_like_ec2?
-  # Try non-blocking connect so we don't "block" if 
-  # the Xen environment is *not* EC2
-  has_ec2_mac? && can_metadata_connect?(EC2_METADATA_ADDR,80)
+  # without hinting in (0.6.14), be aggressive about talking with the metadata
+  # server. adds ohai overhead for non-ec2 instances
+  has_ec2_mac? || can_metadata_connect?(EC2_METADATA_ADDR,80)
 end
 
 if looks_like_ec2?

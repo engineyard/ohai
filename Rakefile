@@ -4,7 +4,7 @@ require 'rubygems/specification'
 require 'date'
 require 'spec/rake/spectask'
 
-GEM = "ohai"
+GEM = "ohai-ey"
 GEM_VERSION = "0.5.8"
 AUTHOR = "Adam Jacob"
 EMAIL = "adam@opscode.com"
