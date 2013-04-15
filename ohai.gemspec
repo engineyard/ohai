@@ -1,12 +1,12 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{ohai-ey}
-  s.version = "0.5.8"
+  s.name = %q{ohai}
+  s.version = "0.5.8.1.ey"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Adam Jacob"]
-  s.autorequire = %q{ohai-ey}
+  s.autorequire = %q{ohai}
   s.date = %q{2013-02-12}
   s.default_executable = %q{ohai}
   s.description = %q{Ohai profiles your system and emits JSON}
